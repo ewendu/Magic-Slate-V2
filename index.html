@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Magic Slate V2</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="https://use.fontawesome.com/e2eec91983.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script src="classes/paint.class.js"></script>
+	<script src="classes/pen.class.js"></script>
+	<script src="classes/slate.class.js"></script>
+	<script src="classes/gradient.class.js"></script>
+	
+
+</head>
+<body>
+	<header>
+		<h1 class="center-align"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+Magic Slate Canvas V2</h1>
+		<nav>
+    		<div class="nav-wrapper deep-purple lighten-1">
+      			<a href="#" class="brand-logo center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+      			<ul id="nav-mobile" class="right hide-on-med-and-down">
+			    </ul>
+    </div>
+  </nav>
+	</header>
+	<main class="container">
+		<h2 class="center-align">Draw, erase, restart !</h2>
+		<canvas id="ewen" width="850" height="500"></canvas>
+		<div class="card  toolbar deep-purple-text text-lighten-1">
+		<h4 class="center-align">Tool bar : </h4>
+		<div class="row">
+			<div class="fixed-action-btn horizontal">
+				
+			    <a class="btn-floating btn-large deep-purple lighten-1">
+			      <i class="fa fa-paint-brush" aria-hidden="true"></i>
+		<!-- Color Nav Bar -->
+			    </a>
+			    <ul id="color">
+			      <li><a data-color="#f44336" class="btn-floating red"></a></li>
+			      <li><a data-color="#ffeb3b" class="btn-floating yellow"></a></li>
+			      <li><a data-color="#4caf50" class="btn-floating green"></a></li>
+			      <li><a data-color="#2196f3" class="btn-floating blue"></a></li>
+			      <li><a data-color="#ff9800" class="btn-floating orange"></a></li>
+			      <li><a data-color="#9c27b0" class="btn-floating purple"></a></li>
+			      <li><a data-color="#795548" class="btn-floating brown"></a></li>
+			      <li><a data-color="black" class="btn-floating black"></a></li>
+			    </ul>
+		 	</div>
+		 </div>	
+		<!-- Little tools -->
+			<div class="row">
+				<a href="#!" class="btn-floating btn-large waves-effect waves-light deep-purple lighten-1" id="erase"><i class="fa fa-eraser" aria-hidden="true"></i>
+				</a>
+				<span>Erase all : </span>
+				<a href="#!" class="btn-floating btn-large waves-effect waves-light deep-purple lighten-1" id="eraseall"><i class="fa fa-magic" aria-hidden="true"></i>
+				</a>
+				<span>Any color you want : </span>
+				<a href="#!" class="btn-floating btn-large waves-effect waves-light deep-purple lighten-1" id="allcolors"><i class="fa fa-eyedropper" aria-hidden="true"></i>
+
+				</a>
+				<div id="gradient" class="hidden">
+					<canvas id="ewen2" width="256" height="256"></canvas>
+				</div>
+			</div>		
+		
+		<div>
+		<!-- Pen Size Tool Bar -->
+			<p>Pen size : </p>
+			<div id="size">
+			<button data-size="1" class="deep-purple lighten-1 accent-4 btn waves-effect waves-light">Xtra - Thin</button>
+			<button data-size="5" class="deep-purple lighten-1 accent-4 btn waves-effect waves-light">Thin</button>
+			<button data-size="10" class="deep-purple lighten-1 accent-4 btn waves-effect waves-light">Normal</button>
+			<button data-size="25" class="deep-purple lighten-1 accent-4 btn waves-effect waves-light">Large</button>
+			<button data-size="50" class="deep-purple lighten-1 accent-4 btn waves-effect waves-light">Xtra - Large</button>
+			</div>
+			
+			
+		</div>
+	</main>
+	<footer class="page-footer deep-purple lighten-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Magic slate ! </h5>
+                <p class="grey-text text-lighten-4">More Canvas animations coming soon !</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-facebook-official" aria-hidden="true"></i>
+					</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-twitter" aria-hidden="true"></i>
+					</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-twitch" aria-hidden="true"></i>
+					</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+					</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright DUSCH Ewen
+            <a class="grey-text text-lighten-4 right" href="#!">Contact</a>
+            </div>
+          </div>
+        </footer>
+	<script src="js/paintmain.js"></script>
+</body>
+</html>

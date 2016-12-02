@@ -1,0 +1,42 @@
+canvas 
+{
+	border: 1px dashed #7e57c2;
+}
+.fixed-action-btn
+{
+	float:right!important;
+	position: relative;
+	right: 20px;
+	top: -10px!important;
+	
+}
+#erase
+{
+	position: relative;
+	left: 20px;
+}
+span
+{
+	margin-left:3%;
+}
+#eraseall
+{
+	position: relative;
+
+}
+.selected
+{
+	background-color: #4caf50!important;
+}
+.hidden
+{
+	display: none;
+}
+#ewen2
+{
+	left: 440px;
+	bottom: -20px;
+	z-index: 99999;
+	position: absolute;
+	cursor: crosshair;
+}
